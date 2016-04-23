@@ -1,0 +1,11 @@
+@font-face{
+	font-family: "My Custom Font";
+	src: url(../fonts/Dawning_of_a_New_Day.ttf) format("truetype");
+}
+
+#signature {
+	font-size:34px;
+	color: orange;
+	margin-left:10px;
+    font-family: "My Custom Font", Verdana, Tahoma;
+}
