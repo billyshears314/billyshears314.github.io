@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/billyshears314/static/css/main.fabb1a6d.css",
+    "main.js": "/billyshears314/static/js/main.3f3605d8.js",
+    "static/js/453.1407b060.chunk.js": "/billyshears314/static/js/453.1407b060.chunk.js",
+    "index.html": "/billyshears314/index.html",
+    "main.fabb1a6d.css.map": "/billyshears314/static/css/main.fabb1a6d.css.map",
+    "main.3f3605d8.js.map": "/billyshears314/static/js/main.3f3605d8.js.map",
+    "453.1407b060.chunk.js.map": "/billyshears314/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fabb1a6d.css",
+    "static/js/main.3f3605d8.js"
+  ]
+}
