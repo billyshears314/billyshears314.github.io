@@ -1,0 +1,27 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --color-text-base: 255, 255, 255; /* Inverted from black for base text */
+    --color-text-muted: 160, 160, 160; /* Lighter gray for dark backgrounds */
+    --color-text-inverted: 0, 0, 0; /* For light-on-dark inversion */
+    --color-fill: 25, 25, 25; /* Inverted from light gray fill */
+    --muted: 55, 55, 55; /* Dark muted tone */
+    --color: 255, 160, 100; /* Warmer orange for visibility */
+    --color-button-accent: 255, 160, 100; /* Accent orange on dark background */
+    --color-button-accent-hover: 249, 115, 22; /* Bring back original vivid orange for hover */
+    --color-button-muted: 60, 50, 45; /* Subtle dark-muted button background */
+
+    [data-theme="orange"] {
+      --color-text-base: 230, 230, 230; /* Light base text */
+      --color-text-muted: 160, 160, 160; /* Muted light gray */
+      --color-text-inverted: 30, 30, 30; /* For use on light elements */
+      --color-fill: 55, 40, 20; /* Dark orange-tinted fill */
+      --muted: 110, 70, 40; /* Muted earthy orange */
+      --color: 255, 145, 60; /* Main orange accent */
+      --color-button-accent: 255, 145, 60; /* Accent button in orange */
+      --color-button-accent-hover: 255, 180, 100; /* Brighter on hover */
+      --color-button-muted: 120, 80, 50; /* Subtle button background */
+    }
+  }
+}
