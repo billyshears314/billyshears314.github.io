@@ -1,6 +1,6 @@
 const data: any = {
   about: {
-    profileImg: "",
+    profileImg: "img/profile.jpg",
     name: "Alex Filipek",
     title: "Full Stack Developer",
     location: "Boston, MA, USA",
@@ -9,17 +9,17 @@ const data: any = {
       {
         name: "Resume",
         link: "",
-        icon: "",
+        icon: "document",
       },
       {
         name: "",
         link: "",
-        icon: "",
+        icon: "github",
       },
       {
         name: "Send email to me",
         link: "",
-        icon: "",
+        icon: "email",
       },
     ],
     description:

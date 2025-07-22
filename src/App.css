@@ -1,3 +1,14 @@
+* {
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url("/img/hexagon_background.jpeg");
+  background-repeat: repeat;
+  background-size: 489px 512px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;

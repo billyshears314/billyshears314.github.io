@@ -1,13 +1,18 @@
-type SectionProps = {
+type SectionProps<T> = {
+  data: T[];
+  Component: React.ComponentType<{ item: T }>;
   title: string;
-  children: React.ReactNode;
 };
 
-export default function Section({ title, children }: SectionProps) {
+function Section<T>({ data, Component, title }: SectionProps<T>) {
   return (
-    <div>
-      <div>{title}</div>
-      <div>{children}</div>
-    </div>
+    <section>
+      <h2>{title}</h2>
+      {data.map((item, index) => (
+        <Component key={index} item={item} />
+      ))}
+    </section>
   );
 }
+
+export default Section;
