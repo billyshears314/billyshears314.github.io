@@ -12,10 +12,10 @@ import data from "./data";
 function App() {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-2/5 md:ml-8">
         <About about={data.about} />
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-3/5 mt-4">
         <Section
           title="Experience"
           data={data.experience}

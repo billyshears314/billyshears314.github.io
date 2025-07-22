@@ -6,8 +6,8 @@ type SectionProps<T> = {
 
 function Section<T>({ data, Component, title }: SectionProps<T>) {
   return (
-    <section>
-      <h2>{title}</h2>
+    <section className="text-left">
+      <h2 className="text-2xl mb-6">{title}</h2>
       {data.map((item, index) => (
         <Component key={index} item={item} />
       ))}

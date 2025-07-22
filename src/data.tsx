@@ -33,6 +33,46 @@ const data: any = {
       company: "GR8 People",
       location: "Yardley, PA - Remote",
       summary:
+        "A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary.",
+      responsibilities: [
+        "Developed and maintained backend services using Node.js and Golang.",
+        "Developed and maintained backend services using Node.js and Golang.",
+        "Developed and maintained backend services using Node.js and Golang.",
+      ],
+      technologies: [
+        {
+          name: "Golang",
+          icon: "go",
+        },
+        {
+          name: "React",
+          icon: "react",
+        },
+        {
+          name: "Next.js",
+          icon: "nextjs",
+        },
+        {
+          name: "SQL",
+          icon: "sql",
+        },
+        {
+          name: "Docker",
+          icon: "docker",
+        },
+        {
+          name: "Kubernetes",
+          icon: "kubernetes",
+        },
+      ],
+    },
+    {
+      startDate: "2021-0-30",
+      endDate: "2024-04-25",
+      position: "Full Stack Developer",
+      company: "GR8 People",
+      location: "Yardley, PA - Remote",
+      summary:
         "A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary.",
       responsibilities: [
         "Developed and maintained backend services using Node.js and Golang.",
