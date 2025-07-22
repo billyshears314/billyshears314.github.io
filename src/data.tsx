@@ -52,10 +52,10 @@ const data: any = {
           name: "Next.js",
           icon: "nextjs",
         },
-        {
-          name: "SQL",
-          icon: "sql",
-        },
+        // {
+        //   name: "SQL",
+        //   icon: "sql",
+        // },
         {
           name: "Docker",
           icon: "docker",
@@ -118,8 +118,7 @@ const data: any = {
     {
       institution: "University of Massachusetts Amherst",
       url: "",
-      area: "Computer Science - Bachelor of Science",
-      studyType: "Full-time student",
+      degree: "Computer Science - Bachelor of Science",
       startDate: "2010-9-01",
       endDate: "2014-5-10",
     },
@@ -127,19 +126,19 @@ const data: any = {
   skills: [
     {
       name: "HTML",
-      icon: "simple-icons:html5",
+      icon: "html",
       level: "Expert",
       keywords: ["Web Development", "Frontend"],
     },
     {
       name: "CSS",
-      icon: "ri:css3-fill",
+      icon: "css",
       level: "Intermediate",
       keywords: ["Web Development", "Frontend", "Responsive Design"],
     },
     {
       name: "Tailwind",
-      icon: "mdi:tailwind",
+      icon: "tailwind",
       level: "Intermediate",
       keywords: [
         "Web Development",
@@ -150,13 +149,13 @@ const data: any = {
     },
     {
       name: "JavaScript",
-      icon: "simple-icons:javascript",
+      icon: "javascript",
       level: "Expert",
       keywords: ["Web Development", "Frontend", "Backend", "Fullstack"],
     },
     {
       name: "TypeScript",
-      icon: "simple-icons:typescript",
+      icon: "typescript",
       level: "Expert",
       keywords: [
         "Web Development",
@@ -167,25 +166,25 @@ const data: any = {
     },
     {
       name: "Node",
-      icon: "ri:nodejs-line",
+      icon: "nodejs",
       level: "Expert",
       keywords: ["Web Development", "Backend", "JavaScript", "Server"],
     },
     {
       name: "SQL",
-      icon: "simple-icons:mysql",
+      icon: "postgresql",
       level: "Intermediate",
       keywords: ["Databases", "SQL", "Data Storage", "Backend"],
     },
     {
       name: "Git",
-      icon: "mdi:git",
+      icon: "git",
       level: "Intermediate",
       keywords: ["Version Control", "Collaboration", "Source Code"],
     },
     {
       name: "Next.js",
-      icon: "ri:nextjs-line",
+      icon: "nextjs",
       level: "Intermediate",
       keywords: [
         "Web Development",
@@ -197,49 +196,49 @@ const data: any = {
     },
     {
       name: "React",
-      icon: "mdi:react",
+      icon: "react",
       level: "Expert",
       keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
     },
     {
       name: "Angular",
-      icon: "mdi:angular",
+      icon: "angular",
       level: "Intermediate",
       keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
     },
     {
       name: "Vue",
-      icon: "mdi:vuejs",
+      icon: "vuejs",
       level: "Intermediate",
       keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
     },
     {
       name: "Docker",
-      icon: "mdi:docker",
+      icon: "docker",
       level: "Intermediate",
       keywords: ["Virtual Environments", "Backend"],
     },
     {
       name: "Kubernetes",
-      icon: "mdi:kubernetes",
+      icon: "kubernetes",
       level: "Intermediate",
       keywords: [],
     },
     {
       name: "Golang",
-      icon: "simple-icons:go",
+      icon: "go",
       level: "Intermediate",
       keywords: ["Backend", "Cloud Service"],
     },
     {
       name: "PHP",
-      icon: "simple-icons:php",
+      icon: "php",
       level: "Intermediate",
       keywords: ["Web Development", "Backend", "Fullstack"],
     },
     {
       name: "Python",
-      icon: "simple-icons:python",
+      icon: "python",
       level: "Intermediate",
     },
   ],

@@ -55,7 +55,7 @@ export default function About({ about }: AboutProps) {
       <div className="flex flex-row mt-4 mb-6 gap-3 cursor-pointer ml-1">
         {about.links.map((link: Link) => {
           return (
-            <div>
+            <div key={link.name}>
               <Icon path={iconMap[link.icon]} size={0.75} />
               {/* <img src={link.icon} /> */}
               {/* {link.name} */}

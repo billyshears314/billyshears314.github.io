@@ -42,6 +42,7 @@ type ExperienceProps = {
   item: Experience;
 };
 
+// TODO: Move to utility file
 // takes date in format YYYY-MM-DD and returns YYYY
 const getYear = (date: string) => {
   return date.slice(0, 4);
@@ -74,9 +75,13 @@ export default function Experience({ item }: ExperienceProps) {
         </div>
         <div className="mt-3">
           <div className="text-xs">Responsibilities:</div>
-          <ul>
+          <ul className="pl-5">
             {item.responsibilities.map((responsibility) => {
-              return <li className="text-xs mt-2 mb-2">{responsibility}</li>;
+              return (
+                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base before:-mt-1 text-xs mt-2 mb-2">
+                  {responsibility}
+                </li>
+              );
             })}
           </ul>
         </div>
