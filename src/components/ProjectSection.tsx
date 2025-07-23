@@ -68,16 +68,16 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
       <div>
         <div className="relative">
           <button
-            className="absolute z-10 -left-2.5 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full"
+            className="absolute z-10 -left-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200"
             onClick={scrollPrev}
           >
-            <ChevronLeft className="!text-gray-800" />
+            <ChevronLeft className="w-5 h-5 hover:text-gray-200 transition-colors duration-200" />
           </button>
           <button
-            className="absolute z-10 -right-2.5 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full"
+            className="absolute z-10 -right-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200 "
             onClick={scrollNext}
           >
-            <ChevronRight />
+            <ChevronRight className="w-5 h-5  transition-colors duration-200" />
           </button>
 
           <div className="overflow-hidden" ref={emblaRef}>

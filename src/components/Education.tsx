@@ -17,7 +17,7 @@ const getYear = (date: string) => {
 
 export default function Education({ item }: EducationProps) {
   return (
-    <div className="flex w-full relative">
+    <div className="flex w-full relative mb-8">
       <div className="flex">
         <div>
           <svg

@@ -61,29 +61,12 @@ export default function Skill({ item }: SkillProps) {
     return <div>{item.name}</div>; // fallback if icon not found
   }
 
-  // function renderIcon(
-  //   icon: string | React.ComponentType<{ size?: number | string }>
-  // ) {
-  //   if (typeof icon === "string") {
-  //     console.log("STRING");
-  //     // mdi path string
-  //     return <Icon path={icon} size={0.6} />;
-  //   } else {
-  //     console.log("ELSE");
-  //     // react-icons component
-  //     const ReactIcon = icon;
-  //     return <ReactIcon size={16} />;
-  //   }
-  // }
-
   function renderIcon(
     icon: string | React.ComponentType<{ size?: number | string }>
   ) {
     if (typeof icon === "string") {
-      console.log("STRING");
       return <Icon path={icon} size={0.6} />;
     } else {
-      console.log("ELSE");
       const ReactIcon = icon;
       return <ReactIcon size={13} />;
     }
@@ -92,7 +75,7 @@ export default function Skill({ item }: SkillProps) {
   return (
     <div className="flex p-1 bg-primary/50 rounded-lg items-center h-5 px-2">
       {renderIcon(icon)}
-      <div className="ml-1 text-xxs semibold">{item.name}</div>
+      <div className="ml-1 text-xs semibold">{item.name}</div>
     </div>
   );
 }

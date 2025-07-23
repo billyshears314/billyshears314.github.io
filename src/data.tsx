@@ -8,17 +8,17 @@ const data: any = {
     links: [
       {
         name: "Resume",
-        link: "",
+        link: "doc/resume.pdf",
         icon: "document",
       },
       {
-        name: "",
-        link: "",
+        name: "Github Profile",
+        link: "https://github.com/billyshears314",
         icon: "github",
       },
       {
         name: "Send email to me",
-        link: "",
+        link: "mailto:alexfilipek@gmail.com",
         icon: "email",
       },
     ],
@@ -150,7 +150,7 @@ const data: any = {
   ],
   skills: [
     {
-      name: "HTML",
+      name: "HTML5",
       icon: "html",
       level: "Expert",
       keywords: ["Web Development", "Frontend"],

@@ -52,11 +52,16 @@ export default function About({ about }: AboutProps) {
         <span className="ml-2 text-gray-400">{about.location}</span>
       </div>
       <div className="text-xs text-gray-400">{about.email}</div>
-      <div className="flex flex-row mt-4 mb-6 gap-3 cursor-pointer ml-1">
+      <div className="flex flex-row mt-4 mb-4 gap-2 cursor-pointer">
         {about.links.map((link: Link) => {
           return (
-            <div key={link.name}>
-              <Icon path={iconMap[link.icon]} size={0.75} />
+            <div
+              key={link.name}
+              className="hover:bg-primary transition-colors duration-500 p-1 rounded"
+            >
+              <a target="_blank" href={link.link} title={link.name}>
+                <Icon path={iconMap[link.icon]} size={0.75} />
+              </a>
               {/* <img src={link.icon} /> */}
               {/* {link.name} */}
             </div>
