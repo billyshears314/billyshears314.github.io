@@ -3,7 +3,7 @@ import {
   About,
   Section,
   Experience,
-  Project,
+  ProjectSection,
   Education,
   Skill,
 } from "./components";
@@ -21,11 +21,12 @@ function App() {
           data={data.experience}
           Component={Experience}
         ></Section>
-        <Section
+        {/* <Section
           title="Projects"
           data={data.projects}
           Component={Project}
-        ></Section>
+        ></Section> */}
+        <ProjectSection projects={data.projects} />
         <Section
           title="Education"
           data={data.education}

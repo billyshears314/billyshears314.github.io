@@ -109,9 +109,34 @@ const data: any = {
   ],
   projects: [
     {
+      title: "Blackjack CLI",
+      description: "A simple weather app using OpenWeatherMap API.",
+      link: "https://github.com/alex/weather-app",
+      image: "img/projects/blackjack.png",
+    },
+    {
       title: "Weather App",
       description: "A simple weather app using OpenWeatherMap API.",
       link: "https://github.com/alex/weather-app",
+      image: "img/projects/blackjack.png",
+    },
+    {
+      title: "Weather App",
+      description: "A simple weather app using OpenWeatherMap API.",
+      link: "https://github.com/alex/weather-app",
+      image: "img/projects/blackjack.png",
+    },
+    {
+      title: "Weather App",
+      description: "A simple weather app using OpenWeatherMap API.",
+      link: "https://github.com/alex/weather-app",
+      image: "img/projects/blackjack.png",
+    },
+    {
+      title: "Weather App",
+      description: "A simple weather app using OpenWeatherMap API.",
+      link: "https://github.com/alex/weather-app",
+      image: "img/projects/blackjack.png",
     },
   ],
   education: [
