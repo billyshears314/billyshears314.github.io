@@ -10,6 +10,7 @@ type Experience = {
   endDate: string;
   position: string;
   company: string;
+  companyLink: string;
   location: string;
   summary: string;
   responsibilities: string[];

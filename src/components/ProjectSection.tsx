@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { mdiGithub, mdiLaunch } from "@mdi/js";
+import { mdiGithub } from "@mdi/js";
 import { Icon } from "@mdi/react";
 
 type Project = {
@@ -118,7 +118,7 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
       </div>
       {/* Mobile Screens */}
       <div className="block md:hidden">
-        {projects.map((project: any, index) => (
+        {projects.map((project: any) => (
           <div className="h-54 relative mb-6 text-left">
             <div className="text-gray-200 mb-2">
               <span className="mr-2 text-inherit">{project.title}</span>
