@@ -40,6 +40,7 @@ type Experience = {
 
 type ExperienceProps = {
   item: Experience;
+  isFirst: boolean;
 };
 
 // TODO: Move to utility file
@@ -48,9 +49,9 @@ const getYear = (date: string) => {
   return date.slice(0, 4);
 };
 
-export default function Experience({ item }: ExperienceProps) {
+export default function Experience({ item, isFirst }: ExperienceProps) {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row my-0 py-0 space-y-0">
       <div className="w-[70px]">
         <span className="text-xxs font-semibold">
           {getYear(item.startDate)}
@@ -58,11 +59,19 @@ export default function Experience({ item }: ExperienceProps) {
         -{" "}
         <span className="text-xxs font-semibold">{getYear(item.endDate)}</span>
       </div>
-      <div className="w-[20px]">
-        <div className="w-[7px] h-[7px] rounded-full bg-primary-muted mt-2.5"></div>
-        <div className="w-[1px] h-full bg-primary-muted ml-[3px]"></div>
+      <div className="w-[20px] relative hidden md:block">
+        {!isFirst && (
+          <div className="w-[1px] h-6 bg-primary-muted ml-[3px] -mt-[13px]"></div>
+        )}
+        <div
+          className={`w-[7px] h-[7px] rounded-full bg-primary-muted ${
+            isFirst ? "mt-2.5" : ""
+          }`}
+          style={{ boxShadow: "0 0 3px 3px rgba(110, 70, 40, 0.5)" }}
+        ></div>
+        <div className="w-[1px] h-[calc(100%-10px)] bg-primary-muted ml-[3px]"></div>
       </div>
-      <div className="w-[450px] mb-6">
+      <div className="w-[100%] md:w-[450px] mb-4">
         <div>
           <span>{item.position}</span>
           <span> @ </span>
@@ -85,7 +94,7 @@ export default function Experience({ item }: ExperienceProps) {
             })}
           </ul>
         </div>
-        <div className="flex gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-4">
           {/* <div className="text-xs">Technologies Used:</div> */}
           {item.technologies.map((technology) => {
             return <Skill item={technology} />;

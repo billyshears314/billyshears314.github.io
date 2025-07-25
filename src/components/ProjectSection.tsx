@@ -50,13 +50,21 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
   const renderProjectSlide = (project: any) => {
     return (
       <div className="h-54 relative">
-        <img src={project.image} />
-        <div className="absolute top-2 right-2 text-gray-200 cursor-pointer hover:text-primary transition-colors duration-200">
-          <Icon path={mdiGithub} size={1} />
+        <div className="mb-0.5">{project.title}</div>
+        <div className="relative">
+          <img src={project.image} />
+          <a href={project.link} title={`View ${project.title} on Github`}>
+            <div className="absolute top-2 right-2 text-gray-200 cursor-pointer hover:text-primary transition-colors duration-200">
+              <Icon path={mdiGithub} size={1} />
+            </div>
+          </a>
         </div>
-        <div className="absolute bottom-1 right-1 text-sm p-1 flex cursor-pointer hover:text-primary transition-colors duration-200 text-gray-200">
-          <span className="mr-2 text-inherit">{project.title}</span>{" "}
-          <Icon path={mdiLaunch} size={0.85} className="text-inherit" />
+        {/* <div className="absolute bottom-1 right-1 text-sm p-1 flex text-gray-200">
+          <span className="text-inherit">{project.title}</span>
+        </div> */}
+        {/* <Icon path={mdiLaunch} size={0.85} className="text-inherit" /> */}
+        <div className="text-gray-300 text-xs mt-0.5">
+          {project.description}
         </div>
       </div>
     );
@@ -64,8 +72,9 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
 
   return (
     <div className="relative">
-      <h2 className="text-2xl text-left mb-8">Projects</h2>
-      <div>
+      <h2 className="text-2xl text-left mb-4 md:mb-8">Projects</h2>
+      {/* Non-mobile size screens */}
+      <div className="hidden md:block">
         <div className="relative">
           <button
             className="absolute z-10 -left-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200"
@@ -107,11 +116,27 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
           ))}
         </div>
       </div>
+      {/* Mobile Screens */}
+      <div className="block md:hidden">
+        {projects.map((project: any, index) => (
+          <div className="h-54 relative mb-6 text-left">
+            <div className="text-gray-200 mb-2">
+              <span className="mr-2 text-inherit">{project.title}</span>
+            </div>
+            <div className="relative">
+              <img src={project.image} />
+              <a href={project.link} title={`View ${project.title} on Github`}>
+                <div className="absolute top-2 right-2 text-gray-200 cursor-pointer hover:text-primary transition-colors duration-200">
+                  <Icon path={mdiGithub} size={1} />
+                </div>
+              </a>
+            </div>
+            <div className="text-xs mt-2 text-gray-300">
+              {project.description}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-    // <div>
-    //   <div>{item.title}</div>
-    //   <div>{item.description}</div>
-    //   <div>{item.link}</div>
-    // </div>
   );
 }

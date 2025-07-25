@@ -23,7 +23,7 @@ const data: any = {
       },
     ],
     description:
-      "I am a fullstack developer with a varied history of programming languages, but mostly working with Node.js/React in Typescript.",
+      "I am a frontend-leaning full stack developer.  I like to dig deep and solve problems both big and small.  My preferred tech stack is Node.js and React with TypeScript.",
   },
   experience: [
     {
@@ -52,10 +52,6 @@ const data: any = {
           name: "Next.js",
           icon: "nextjs",
         },
-        // {
-        //   name: "SQL",
-        //   icon: "sql",
-        // },
         {
           name: "Docker",
           icon: "docker",
@@ -82,27 +78,23 @@ const data: any = {
       technologies: [
         {
           name: "Golang",
-          icon: "",
+          icon: "go",
         },
         {
           name: "React",
-          icon: "",
+          icon: "react",
         },
         {
           name: "Next.js",
-          icon: "",
-        },
-        {
-          name: "SQL",
-          icon: "",
+          icon: "nextjs",
         },
         {
           name: "Docker",
-          icon: "",
+          icon: "docker",
         },
         {
           name: "Kubernetes",
-          icon: "",
+          icon: "kubernetes",
         },
       ],
     },
@@ -110,32 +102,8 @@ const data: any = {
   projects: [
     {
       title: "Blackjack CLI",
-      description: "A simple weather app using OpenWeatherMap API.",
-      link: "https://github.com/alex/weather-app",
-      image: "img/projects/blackjack.png",
-    },
-    {
-      title: "Weather App",
-      description: "A simple weather app using OpenWeatherMap API.",
-      link: "https://github.com/alex/weather-app",
-      image: "img/projects/blackjack.png",
-    },
-    {
-      title: "Weather App",
-      description: "A simple weather app using OpenWeatherMap API.",
-      link: "https://github.com/alex/weather-app",
-      image: "img/projects/blackjack.png",
-    },
-    {
-      title: "Weather App",
-      description: "A simple weather app using OpenWeatherMap API.",
-      link: "https://github.com/alex/weather-app",
-      image: "img/projects/blackjack.png",
-    },
-    {
-      title: "Weather App",
-      description: "A simple weather app using OpenWeatherMap API.",
-      link: "https://github.com/alex/weather-app",
+      description: "A blackjack game using the DeckHand API.",
+      link: "https://github.com/billyshears314/BlackjackCLI",
       image: "img/projects/blackjack.png",
     },
   ],

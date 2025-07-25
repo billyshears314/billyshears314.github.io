@@ -2,7 +2,7 @@ import "./App.css";
 import {
   About,
   Section,
-  Experience,
+  ExperienceSection,
   ProjectSection,
   Education,
   SkillSection,
@@ -16,11 +16,12 @@ function App() {
         <About about={data.about} />
       </div>
       <div className="w-full md:w-3/5 mt-4">
-        <Section
+        <ExperienceSection data={data.experience} />
+        {/* <Section
           title="Experience"
           data={data.experience}
-          Component={Experience}
-        ></Section>
+          Component={Experience} */}
+        {/* ></Section> */}
         {/* <Section
           title="Projects"
           data={data.projects}
