@@ -7,6 +7,7 @@ import {
   mdiVuejs,
   mdiDocker,
   mdiKubernetes,
+  mdiDatabase,
 } from "@mdi/js";
 
 import {
@@ -15,14 +16,19 @@ import {
   SiTypescript,
   SiGo,
   SiPhp,
+  SiRuby,
   SiPython,
   SiNextdotjs,
   SiPostgresql,
+  SiAmazondynamodb,
+  SiElasticsearch,
+  SiApachesolr,
 } from "react-icons/si";
 
 import { RiCss3Fill, RiNodejsLine } from "react-icons/ri";
 
 const iconMap = {
+  sql: mdiDatabase,
   tailwind: mdiTailwind,
   git: mdiGit,
   react: mdiReact,
@@ -36,8 +42,12 @@ const iconMap = {
   go: SiGo,
   php: SiPhp,
   python: SiPython,
+  ruby: SiRuby,
+  dynamodb: SiAmazondynamodb,
   nextjs: SiNextdotjs,
   postgresql: SiPostgresql,
+  elasticsearch: SiElasticsearch,
+  solr: SiApachesolr,
   css: RiCss3Fill,
   nodejs: RiNodejsLine,
 };

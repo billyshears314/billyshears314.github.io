@@ -32,6 +32,7 @@ type Experience = {
   endDate: string;
   position: string;
   company: string;
+  companyLink: string;
   location: string;
   summary: string;
   responsibilities: string[];
@@ -53,15 +54,13 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
   return (
     <div className="flex flex-col md:flex-row my-0 py-0 space-y-0">
       <div className="w-[70px]">
-        <span className="text-xxs font-semibold">
-          {getYear(item.startDate)}
-        </span>{" "}
-        -{" "}
-        <span className="text-xxs font-semibold">{getYear(item.endDate)}</span>
+        <span className="text-xxs font-semibold">{`${getYear(
+          item.startDate
+        )} - ${getYear(item.endDate)}`}</span>
       </div>
       <div className="w-[20px] relative hidden md:block">
         {!isFirst && (
-          <div className="w-[1px] h-6 bg-primary-muted ml-[3px] -mt-[13px]"></div>
+          <div className="w-[1px] h-10 bg-primary-muted ml-[3px] -mt-[29px]"></div>
         )}
         <div
           className={`w-[7px] h-[7px] rounded-full bg-primary-muted ${
@@ -75,26 +74,28 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
         <div>
           <span>{item.position}</span>
           <span> @ </span>
-          <span className="text-primary">{item.company}</span>
+          <a href={item.companyLink}>
+            <span className="text-primary">{item.company}</span>
+          </a>
         </div>
         <div className="text-xxs text-gray-400">{item.location}</div>
-        <div className="mt-3">
+        {/* <div className="mt-3">
           <div className="text-xs">Summary:</div>
           <div className="text-xs text-gray-300">{item.summary}</div>
-        </div>
+        </div> */}
         <div className="mt-3">
-          <div className="text-xs">Responsibilities:</div>
+          {/* <div className="text-xs">Responsibilities:</div> */}
           <ul className="pl-5">
             {item.responsibilities.map((responsibility) => {
               return (
-                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base before:-mt-1 text-xs mt-2 mb-2">
+                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base before:-mt-1 text-xs mt-2 mb-2 text-gray-200">
                   {responsibility}
                 </li>
               );
             })}
           </ul>
         </div>
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-4 mb-2 md:mb-6">
           {/* <div className="text-xs">Technologies Used:</div> */}
           {item.technologies.map((technology) => {
             return <Skill item={technology} />;

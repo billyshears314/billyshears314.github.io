@@ -31,13 +31,13 @@ const data: any = {
       endDate: "2024-04-25",
       position: "Full Stack Developer",
       company: "GR8 People",
+      companyLink: "https://www.gr8people.com/",
       location: "Yardley, PA - Remote",
       summary:
         "A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary.",
       responsibilities: [
-        "Developed and maintained backend services using Node.js and Golang.",
-        "Developed and maintained backend services using Node.js and Golang.",
-        "Developed and maintained backend services using Node.js and Golang.",
+        "Worked on integrating and syncing GR8 People’s customer data to LinkedIn using their API for Talent Solutions",
+        "Modernized campaign email and SMS messaging systems from ColdFusion to microservice system and redesigned frontend with our tech stack (Go, DynamoDB, GraphQL, React)",
       ],
       technologies: [
         {
@@ -53,48 +53,127 @@ const data: any = {
           icon: "nextjs",
         },
         {
+          name: "DynamoDB",
+          icon: "dynamodb",
+        },
+        {
+          name: "SQL",
+          icon: "sql",
+        },
+        {
           name: "Docker",
           icon: "docker",
         },
         {
           name: "Kubernetes",
           icon: "kubernetes",
+        },
+        {
+          name: "Elasticsearch",
+          icon: "elasticsearch",
         },
       ],
     },
     {
-      startDate: "2021-0-30",
-      endDate: "2024-04-25",
-      position: "Full Stack Developer",
-      company: "GR8 People",
-      location: "Yardley, PA - Remote",
+      startDate: "2017-12-12",
+      endDate: "2021-08-27",
+      position: "Senior Software Engineer",
+      company: "Customer Learning Designs",
+      companyLink: "https://www.cldinc.com/",
+      location: "Belmont, MA",
       summary:
-        "A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary.",
+        "Extending and maintaining SaaS application of Application Tracking System capabilities and career site pages for customer's.",
       responsibilities: [
-        "Developed and maintained backend services using Node.js and Golang.",
-        "Developed and maintained backend services using Node.js and Golang.",
-        "Developed and maintained backend services using Node.js and Golang.",
+        "Led frontend project in developing a new version of the company’s primary eLearning software from the ground up",
+        "Built many internal tools and scripts to automate tasks to improve production time of generating hundreds of customized versions of eLearning software",
+        "Developed multiplayer question-based games",
+        "Research/Prototyping of AR software",
       ],
       technologies: [
         {
-          name: "Golang",
-          icon: "go",
+          name: "Vue",
+          icon: "vuejs",
         },
+        {
+          name: "Angular",
+          icon: "angular",
+        },
+        {
+          name: "Node",
+          icon: "nodejs",
+        },
+        {
+          name: "Ruby",
+          icon: "ruby",
+        },
+        {
+          name: "Python",
+          icon: "python",
+        },
+      ],
+    },
+    {
+      startDate: "2016-09-19",
+      endDate: "2017-11-08",
+      position: "Full Stack Developer",
+      company: "Wayfair",
+      companyLink: "https://www.wayfair.com/",
+      location: "Boston, MA",
+      summary:
+        "Extending and maintaining SaaS application of Application Tracking System capabilities and career site pages for customer's.",
+      responsibilities: [
+        "Developed customer facing code for Promotions Team (in charge of Event Pages and Closeout/Clearance pages)",
+        "Built internal tool for scheduling and customizing Major Promotional Events",
+      ],
+      technologies: [
         {
           name: "React",
           icon: "react",
         },
         {
-          name: "Next.js",
-          icon: "nextjs",
+          name: "PHP",
+          icon: "php",
         },
         {
-          name: "Docker",
-          icon: "docker",
+          name: "SQL",
+          icon: "sql",
+        },
+      ],
+    },
+    {
+      startDate: "2015-1-21",
+      endDate: "2016-09-09",
+      position: "Software Engineer",
+      company: "Customer Learning Designs",
+      companyLink: "https://www.cldinc.com/",
+      location: "Belmont, MA",
+      summary: "",
+      responsibilities: [
+        "Worked with tech team to develop custom eLearning pieces with custom content",
+        "Developed portals and eGames",
+        "Created full stack tool to search internal documents using Solr",
+        "Developed solution using open source technologies for virtual microscopy project",
+      ],
+      technologies: [
+        {
+          name: "Angular",
+          icon: "angular",
         },
         {
-          name: "Kubernetes",
-          icon: "kubernetes",
+          name: "Node",
+          icon: "nodejs",
+        },
+        {
+          name: "Ruby",
+          icon: "ruby",
+        },
+        {
+          name: "Javascript",
+          icon: "javascript",
+        },
+        {
+          name: "Solr",
+          icon: "solr",
         },
       ],
     },
@@ -102,7 +181,7 @@ const data: any = {
   projects: [
     {
       title: "Blackjack CLI",
-      description: "A blackjack game using the DeckHand API.",
+      description: "A blackjack game using the Deck of Cards API.",
       link: "https://github.com/billyshears314/BlackjackCLI",
       image: "img/projects/blackjack.png",
     },
