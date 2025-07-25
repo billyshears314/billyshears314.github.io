@@ -23,6 +23,7 @@ import {
   SiAmazondynamodb,
   SiElasticsearch,
   SiApachesolr,
+  SiGraphql,
 } from "react-icons/si";
 
 import { RiCss3Fill, RiNodejsLine } from "react-icons/ri";
@@ -48,6 +49,7 @@ const iconMap = {
   postgresql: SiPostgresql,
   elasticsearch: SiElasticsearch,
   solr: SiApachesolr,
+  graphql: SiGraphql,
   css: RiCss3Fill,
   nodejs: RiNodejsLine,
 };

@@ -33,17 +33,12 @@ const data: any = {
       company: "GR8 People",
       companyLink: "https://www.gr8people.com/",
       location: "Yardley, PA - Remote",
-      summary:
-        "A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary. A very long summary.",
+      summary: "",
       responsibilities: [
         "Worked on integrating and syncing GR8 People’s customer data to LinkedIn using their API for Talent Solutions",
         "Modernized campaign email and SMS messaging systems from ColdFusion to microservice system and redesigned frontend with our tech stack (Go, DynamoDB, GraphQL, React)",
       ],
       technologies: [
-        {
-          name: "Golang",
-          icon: "go",
-        },
         {
           name: "React",
           icon: "react",
@@ -51,6 +46,14 @@ const data: any = {
         {
           name: "Next.js",
           icon: "nextjs",
+        },
+        {
+          name: "Golang",
+          icon: "go",
+        },
+        {
+          name: "GraphQL",
+          icon: "graphql",
         },
         {
           name: "DynamoDB",
