@@ -81,7 +81,7 @@ const data: any = {
       startDate: "2017-12-12",
       endDate: "2021-08-27",
       position: "Senior Software Engineer",
-      company: "Customer Learning Designs",
+      company: "Custom Learning Designs",
       companyLink: "https://www.cldinc.com/",
       location: "Belmont, MA",
       summary:
@@ -147,7 +147,7 @@ const data: any = {
       startDate: "2015-1-21",
       endDate: "2016-09-09",
       position: "Software Engineer",
-      company: "Customer Learning Designs",
+      company: "Custom Learning Designs",
       companyLink: "https://www.cldinc.com/",
       location: "Belmont, MA",
       summary: "",
@@ -246,7 +246,7 @@ const data: any = {
       keywords: ["Web Development", "Backend", "JavaScript", "Server"],
     },
     {
-      name: "SQL",
+      name: "PostgreSQL",
       icon: "postgresql",
       level: "Intermediate",
       keywords: ["Databases", "SQL", "Data Storage", "Backend"],
