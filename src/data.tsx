@@ -183,10 +183,28 @@ const data: any = {
   ],
   projects: [
     {
+      title: "Personal Finance",
+      description:
+        "A fullstack responsive application for managing one's personal finances",
+      source: "https://github.com/billyshears314/Personal-Finance",
+      demo: "https://personal-finance-dusky.vercel.app",
+      // TODO: REPLACE WITH REAL IMAGES
+      images: ["img/projects/blackjack.png", "img/projects/blackjack.png"],
+      technologies: [
+        "nextjs",
+        "react",
+        "nodejs",
+        "typescript",
+        "postgresql",
+        "typeorm",
+      ],
+    },
+    {
       title: "Blackjack CLI",
       description: "A blackjack game using the Deck of Cards API.",
-      link: "https://github.com/billyshears314/BlackjackCLI",
-      image: "img/projects/blackjack.png",
+      source: "https://github.com/billyshears314/BlackjackCLI",
+      images: ["img/projects/blackjack.png"],
+      technologies: ["nodejs", "typescript"],
     },
   ],
   education: [
