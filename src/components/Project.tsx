@@ -1,7 +1,5 @@
 import Carousel from "./Carousel";
 import type { Project } from "../types/types";
-import { mdiLaunch } from "@mdi/js";
-import { Icon } from "@mdi/react";
 
 interface ProjectProps {
   project: Project;

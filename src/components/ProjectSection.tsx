@@ -61,7 +61,7 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
 
   return (
     <div className="relative mb-8">
-      <h2 className="text-2xl text-left mb-4 md:mb-8 divide-y divide-gray-300">
+      <h2 className="text-2xl text-left mb-4 md:mb-8 divide-y divide-gray-300 font-semibold">
         Projects
       </h2>
 

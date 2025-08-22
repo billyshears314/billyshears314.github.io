@@ -13,7 +13,7 @@ type SkillSectionProps = {
 export default function SkillSection({ skills }: SkillSectionProps) {
   return (
     <div>
-      <h2 className="text-2xl text-left mb-6">Skills</h2>
+      <h2 className="text-2xl text-left mb-6 font-semibold">Skills</h2>
       <div className="flex flex-wrap gap-3">
         {skills.map((skill) => {
           return <Skill item={skill} />;
