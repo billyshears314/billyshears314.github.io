@@ -65,9 +65,11 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
         Projects
       </h2>
 
-      {projects.map((project) => {
-        return <ProjectComponent project={project}></ProjectComponent>;
-      })}
+      <div className="divide-y divide-gray-400">
+        {projects.map((project) => {
+          return <ProjectComponent project={project}></ProjectComponent>;
+        })}
+      </div>
     </div>
   );
 }

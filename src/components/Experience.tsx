@@ -53,8 +53,8 @@ const getYear = (date: string) => {
 export default function Experience({ item, isFirst }: ExperienceProps) {
   return (
     <div className="flex flex-col md:flex-row my-0 py-0 space-y-0">
-      <div className="w-[70px]">
-        <span className="text-xxs font-semibold">{`${getYear(
+      <div className="w-[75px]">
+        <span className="text-xs font-semibold">{`${getYear(
           item.startDate
         )} - ${getYear(item.endDate)}`}</span>
       </div>
@@ -78,7 +78,7 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
             <span className="text-primary">{item.company}</span>
           </a>
         </div>
-        <div className="text-xxs text-gray-400">{item.location}</div>
+        <div className="text-xs text-gray-400">{item.location}</div>
         {/* <div className="mt-3">
           <div className="text-xs">Summary:</div>
           <div className="text-xs text-gray-300">{item.summary}</div>
@@ -88,7 +88,7 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
           <ul className="pl-5">
             {item.responsibilities.map((responsibility) => {
               return (
-                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base before:-mt-1 text-xs mt-2 mb-2 text-gray-200">
+                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base text-sm mt-2 mb-2 text-gray-200 leading-relaxed">
                   {responsibility}
                 </li>
               );

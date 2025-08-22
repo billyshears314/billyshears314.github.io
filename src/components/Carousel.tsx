@@ -1,15 +1,16 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import type { Image } from "../types/types";
 
 interface CarouselProps {
-  images: string[];
+  images: Image[];
 }
 
 export default function Carousel({ images }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    slidesToScroll: 1,
-    loop: false,
+    slidesToScroll: 2,
+    loop: true,
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
@@ -40,23 +41,33 @@ export default function Carousel({ images }: CarouselProps) {
       <div>
         <div className="relative">
           <button
-            className="absolute z-10 -left-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200"
+            className="absolute z-10 -left-6 lg:-left-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200"
             onClick={scrollPrev}
           >
             <ChevronLeft className="w-5 h-5 hover:text-gray-200 transition-colors duration-200" />
           </button>
           <button
-            className="absolute z-10 -right-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200 "
+            className="absolute z-10 -right-6 lg:-right-10 top-1/2 -translate-y-1/2 bg-gray-200 shadow p-2 rounded-full hover:bg-primary text-gray-800 transition-colors duration-200 hover:text-gray-200 "
             onClick={scrollNext}
           >
             <ChevronRight className="w-5 h-5  transition-colors duration-200" />
           </button>
 
-          <div className="overflow-hidden" ref={emblaRef}>
+          <div className="mx-6 px-2 lg:mx-0 overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {images.map((img, index) => (
-                <div key={index} className="flex-[0_0_100%] px-2">
-                  <img src={img} />
+                <div
+                  key={index}
+                  className={`${
+                    img.isMobile
+                      ? "flex-[0_0_30%] lg:flex-[0_0_25%]"
+                      : "flex-[0_0_70%] lg:flex-[0_0_75%]"
+                  } px-4 lg:px-8`}
+                >
+                  <img src={img.src} />
+                  <div className="text-gray-300 font-semibold mt-2 text-sm lg:text-base">
+                    {img.caption}
+                  </div>
                 </div>
               ))}
             </div>

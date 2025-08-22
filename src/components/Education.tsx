@@ -38,12 +38,12 @@ export default function Education({ item }: EducationProps) {
           </svg>
         </div>
         <div>
-          <div className="text-sm">{item.institution}</div>
-          <div className="text-xs text-gray-400">{item.degree}</div>
+          <div className="text-base">{item.institution}</div>
+          <div className="text-sm text-gray-400">{item.degree}</div>
         </div>
       </div>
       <div className="absolute right-0">
-        <div className="text-xs font-semibold">
+        <div className="text-sm font-semibold">
           {getYear(item.startDate)} - {getYear(item.endDate)}
         </div>
       </div>

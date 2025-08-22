@@ -49,18 +49,18 @@ export default function About({ about }: AboutProps) {
         <h1 className="text-xl md:text-2xl font-bold mt-2 md:mt-0">
           {about.name}
         </h1>
-        <div className="text-xs text-gray-400 mb-2">{about.title}</div>
-        <div className="text-xs text-gray-400 mb-2 flex flex-row">
+        <div className="text-sm text-gray-400 mb-2">{about.title}</div>
+        <div className="text-sm text-gray-400 mb-2 flex flex-row">
           <Icon path={mdiEarth} size={0.75} />{" "}
           <span className="ml-2 text-gray-400">{about.location}</span>
         </div>
-        <div className="text-xs text-gray-400">{about.email}</div>
-        <div className="flex flex-row mt-4 mb-4 gap-2 cursor-pointer">
+        <div className="text-sm text-gray-400">{about.email}</div>
+        <div className="flex flex-row mt-4 mb-4 gap-2">
           {about.links.map((link: Link) => {
             return (
               <div
                 key={link.name}
-                className="hover:bg-primary transition-colors duration-500 p-1 rounded"
+                className="hover:bg-primary transition-colors duration-500 p-1 rounded cursor-pointer"
               >
                 <a target="_blank" href={link.link} title={link.name}>
                   <Icon path={iconMap[link.icon]} size={0.75} />
@@ -73,8 +73,8 @@ export default function About({ about }: AboutProps) {
         </div>
       </div>
       <div className="w-3/5 pl-5 md:w-full md:pl-0">
-        <div className="text-xl mb-1 md:mb-3">About</div>
-        <div className="text-sm text-gray-400 leading-relaxed font-semibold lg:w-1/2 font-mono opacity-90">
+        <div className="text-2xl mb-1 md:mb-3 font-bold">About</div>
+        <div className="text-lg text-white leading-relaxed lg:w-2/3 font-mono opacity-75">
           {about.description}
         </div>
       </div>

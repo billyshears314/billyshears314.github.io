@@ -18,12 +18,12 @@ const data: any = {
       },
       {
         name: "Send email to me",
-        link: "mailto:alexfilipek@gmail.com",
+        link: "mailto:awfilipek@gmail.com",
         icon: "email",
       },
     ],
     description:
-      "I am a frontend-leaning full stack developer.  I like to dig deep and solve problems both big and small.  My preferred tech stack is Node.js and React with TypeScript.",
+      "I am a frontend-leaning full stack developer.  I like to build highly interactive responsive web applications.  My preferred tech stack is Node.js and React with TypeScript.",
   },
   experience: [
     {
@@ -189,7 +189,58 @@ const data: any = {
       source: "https://github.com/billyshears314/Personal-Finance",
       demo: "https://personal-finance-dusky.vercel.app",
       // TODO: REPLACE WITH REAL IMAGES
-      images: ["img/projects/blackjack.png", "img/projects/blackjack.png"],
+      images: [
+        {
+          src: "img/projects/personal-finance/overview_screenshot.png",
+          caption: "Overview (Desktop)",
+          isMobile: false,
+        },
+        {
+          src: "img/projects/personal-finance/overview_screenshot_mobile.png",
+          caption: "Overview (Mobile)",
+          isMobile: true,
+        },
+        {
+          src: "img/projects/personal-finance/transactions_screenshot.png",
+          caption: "Transactions (Desktop)",
+          isMobile: false,
+        },
+        {
+          src: "img/projects/personal-finance/transactions_screenshot_mobile.png",
+          caption: "Transactions (Mobile)",
+          isMobile: true,
+        },
+        {
+          src: "img/projects/personal-finance/budgets_screenshot.png",
+          caption: "Budgets (Desktop)",
+          isMobile: false,
+        },
+        {
+          src: "img/projects/personal-finance/budgets_screenshot_mobile.png",
+          caption: "Budgets (Mobile)",
+          isMobile: true,
+        },
+        {
+          src: "img/projects/personal-finance/pots_screenshot.png",
+          caption: "Pots (Desktop)",
+          isMobile: false,
+        },
+        {
+          src: "img/projects/personal-finance/pots_screenshot_mobile.png",
+          caption: "Pots (Mobile)",
+          isMobile: true,
+        },
+        {
+          src: "img/projects/personal-finance/recurring_bills_screenshot.png",
+          caption: "Recurring Bills (Desktop)",
+          isMobile: false,
+        },
+        {
+          src: "img/projects/personal-finance/recurring_bills_screenshot_mobile.png",
+          caption: "Recurring Bills (Mobile)",
+          isMobile: true,
+        },
+      ],
       technologies: [
         "nextjs",
         "react",
@@ -203,7 +254,13 @@ const data: any = {
       title: "Blackjack CLI",
       description: "A blackjack game using the Deck of Cards API.",
       source: "https://github.com/billyshears314/BlackjackCLI",
-      images: ["img/projects/blackjack.png"],
+      images: [
+        {
+          src: "img/projects/blackjack.png",
+          caption: "Blackjack CLI",
+          isMobile: true,
+        },
+      ],
       technologies: ["nodejs", "typescript"],
     },
   ],

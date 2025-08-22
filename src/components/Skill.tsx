@@ -85,9 +85,9 @@ export default function Skill({ item }: SkillProps) {
   }
 
   return (
-    <div className="flex p-1 bg-primary/50 rounded-lg items-center h-5 px-2">
+    <div className="flex my-[1px] bg-primary/50 rounded-lg items-center h-6 px-2">
       {renderIcon(icon)}
-      <div className="ml-1 text-xs semibold">{item.name}</div>
+      <div className="ml-1 -mt-[2px] text-sm semibold">{item.name}</div>
     </div>
   );
 }
