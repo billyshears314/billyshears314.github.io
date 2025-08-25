@@ -1,31 +1,4 @@
 import Skill from "./Skill";
-import {
-  mdiTailwind,
-  mdiGit,
-  mdiReact,
-  mdiAngular,
-  mdiVuejs,
-  mdiDocker,
-  mdiKubernetes,
-} from "@mdi/js";
-
-// TODO: Fix - this is repetitive, maybe put in types file
-const iconMap = {
-  tailwind: mdiTailwind,
-  git: mdiGit,
-  react: mdiReact,
-  angular: mdiAngular,
-  vuejs: mdiVuejs,
-  docker: mdiDocker,
-  kubernetes: mdiKubernetes,
-};
-
-type IconKey = keyof typeof iconMap;
-
-type Technology = {
-  name: string;
-  icon: IconKey;
-};
 
 type Experience = {
   startDate: string;
@@ -36,7 +9,7 @@ type Experience = {
   location: string;
   summary: string;
   responsibilities: string[];
-  technologies: Technology[];
+  technologies: string[];
 };
 
 type ExperienceProps = {
@@ -86,9 +59,12 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
         <div className="mt-3">
           {/* <div className="text-xs">Responsibilities:</div> */}
           <ul className="pl-5">
-            {item.responsibilities.map((responsibility) => {
+            {item.responsibilities.map((responsibility, index) => {
               return (
-                <li className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base text-sm mt-2 mb-2 text-gray-200 leading-relaxed">
+                <li
+                  className="relative before:content-['•'] before:absolute before:left-0 before:text-primary before:-ml-4 before:text-base text-sm mt-2 mb-2 text-gray-200 leading-relaxed"
+                  key={index}
+                >
                   {responsibility}
                 </li>
               );
@@ -97,8 +73,8 @@ export default function Experience({ item, isFirst }: ExperienceProps) {
         </div>
         <div className="flex flex-wrap gap-2 mt-4 mb-2 md:mb-6">
           {/* <div className="text-xs">Technologies Used:</div> */}
-          {item.technologies.map((technology) => {
-            return <Skill item={technology} />;
+          {item.technologies.map((technology, index) => {
+            return <Skill skill={technology} key={index} />;
           })}
         </div>
       </div>

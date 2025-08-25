@@ -39,42 +39,15 @@ const data: any = {
         "Modernized campaign email and SMS messaging systems from ColdFusion to microservice system and redesigned frontend with our tech stack (Go, DynamoDB, GraphQL, React)",
       ],
       technologies: [
-        {
-          name: "React",
-          icon: "react",
-        },
-        {
-          name: "Next.js",
-          icon: "nextjs",
-        },
-        {
-          name: "Golang",
-          icon: "go",
-        },
-        {
-          name: "GraphQL",
-          icon: "graphql",
-        },
-        {
-          name: "DynamoDB",
-          icon: "dynamodb",
-        },
-        {
-          name: "SQL",
-          icon: "sql",
-        },
-        {
-          name: "Docker",
-          icon: "docker",
-        },
-        {
-          name: "Kubernetes",
-          icon: "kubernetes",
-        },
-        {
-          name: "Elasticsearch",
-          icon: "elasticsearch",
-        },
+        "react",
+        "nextjs",
+        "go",
+        "graphql",
+        "dynamodb",
+        "sql",
+        "docker",
+        "kubernetes",
+        "elasticsearch",
       ],
     },
     {
@@ -92,28 +65,7 @@ const data: any = {
         "Developed multiplayer question-based games",
         "Research/Prototyping of AR software",
       ],
-      technologies: [
-        {
-          name: "Vue",
-          icon: "vuejs",
-        },
-        {
-          name: "Angular",
-          icon: "angular",
-        },
-        {
-          name: "Node",
-          icon: "nodejs",
-        },
-        {
-          name: "Ruby",
-          icon: "ruby",
-        },
-        {
-          name: "Python",
-          icon: "python",
-        },
-      ],
+      technologies: ["vuejs", "angular", "nodejs", "ruby", "python"],
     },
     {
       startDate: "2016-09-19",
@@ -128,20 +80,7 @@ const data: any = {
         "Developed customer facing code for Promotions Team (in charge of Event Pages and Closeout/Clearance pages)",
         "Built internal tool for scheduling and customizing Major Promotional Events",
       ],
-      technologies: [
-        {
-          name: "React",
-          icon: "react",
-        },
-        {
-          name: "PHP",
-          icon: "php",
-        },
-        {
-          name: "SQL",
-          icon: "sql",
-        },
-      ],
+      technologies: ["react", "php", "sql"],
     },
     {
       startDate: "2015-1-21",
@@ -157,28 +96,7 @@ const data: any = {
         "Created full stack tool to search internal documents using Solr",
         "Developed solution using open source technologies for virtual microscopy project",
       ],
-      technologies: [
-        {
-          name: "Angular",
-          icon: "angular",
-        },
-        {
-          name: "Node",
-          icon: "nodejs",
-        },
-        {
-          name: "Ruby",
-          icon: "ruby",
-        },
-        {
-          name: "Javascript",
-          icon: "javascript",
-        },
-        {
-          name: "Solr",
-          icon: "solr",
-        },
-      ],
+      technologies: ["angular", "nodejs", "ruby", "python", "solr"],
     },
   ],
   projects: [
@@ -247,7 +165,7 @@ const data: any = {
         "nodejs",
         "typescript",
         "postgresql",
-        "typeorm",
+        // "typeorm",
       ],
     },
     {
@@ -274,124 +192,143 @@ const data: any = {
     },
   ],
   skills: [
-    {
-      name: "HTML5",
-      icon: "html",
-      level: "Expert",
-      keywords: ["Web Development", "Frontend"],
-    },
-    {
-      name: "CSS",
-      icon: "css",
-      level: "Intermediate",
-      keywords: ["Web Development", "Frontend", "Responsive Design"],
-    },
-    {
-      name: "Tailwind",
-      icon: "tailwind",
-      level: "Intermediate",
-      keywords: [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design",
-      ],
-    },
-    {
-      name: "JavaScript",
-      icon: "javascript",
-      level: "Expert",
-      keywords: ["Web Development", "Frontend", "Backend", "Fullstack"],
-    },
-    {
-      name: "TypeScript",
-      icon: "typescript",
-      level: "Expert",
-      keywords: [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset",
-      ],
-    },
-    {
-      name: "Node",
-      icon: "nodejs",
-      level: "Expert",
-      keywords: ["Web Development", "Backend", "JavaScript", "Server"],
-    },
-    {
-      name: "PostgreSQL",
-      icon: "postgresql",
-      level: "Intermediate",
-      keywords: ["Databases", "SQL", "Data Storage", "Backend"],
-    },
-    {
-      name: "Git",
-      icon: "git",
-      level: "Intermediate",
-      keywords: ["Version Control", "Collaboration", "Source Code"],
-    },
-    {
-      name: "Next.js",
-      icon: "nextjs",
-      level: "Intermediate",
-      keywords: [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation",
-      ],
-    },
-    {
-      name: "React",
-      icon: "react",
-      level: "Expert",
-      keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
-    },
-    {
-      name: "Angular",
-      icon: "angular",
-      level: "Intermediate",
-      keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
-    },
-    {
-      name: "Vue",
-      icon: "vuejs",
-      level: "Intermediate",
-      keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
-    },
-    {
-      name: "Docker",
-      icon: "docker",
-      level: "Intermediate",
-      keywords: ["Virtual Environments", "Backend"],
-    },
-    {
-      name: "Kubernetes",
-      icon: "kubernetes",
-      level: "Intermediate",
-      keywords: [],
-    },
-    {
-      name: "Golang",
-      icon: "go",
-      level: "Intermediate",
-      keywords: ["Backend", "Cloud Service"],
-    },
-    {
-      name: "PHP",
-      icon: "php",
-      level: "Intermediate",
-      keywords: ["Web Development", "Backend", "Fullstack"],
-    },
-    {
-      name: "Python",
-      icon: "python",
-      level: "Intermediate",
-    },
+    "html",
+    "css",
+    "tailwind",
+    "javascript",
+    "typescript",
+    "nodejs",
+    "postgresql",
+    "git",
+    "nextjs",
+    "react",
+    "angular",
+    "vuejs",
+    "docker",
+    "kubernetes",
+    "go",
+    "php",
+    "python",
   ],
+  // skills: [
+  //   {
+  //     name: "HTML5",
+  //     icon: "html",
+  //     level: "Expert",
+  //     keywords: ["Web Development", "Frontend"],
+  //   },
+  //   {
+  //     name: "CSS",
+  //     icon: "css",
+  //     level: "Intermediate",
+  //     keywords: ["Web Development", "Frontend", "Responsive Design"],
+  //   },
+  //   {
+  //     name: "Tailwind",
+  //     icon: "tailwind",
+  //     level: "Intermediate",
+  //     keywords: [
+  //       "Web Development",
+  //       "Frontend",
+  //       "CSS Framework",
+  //       "Responsive Design",
+  //     ],
+  //   },
+  //   {
+  //     name: "JavaScript",
+  //     icon: "javascript",
+  //     level: "Expert",
+  //     keywords: ["Web Development", "Frontend", "Backend", "Fullstack"],
+  //   },
+  //   {
+  //     name: "TypeScript",
+  //     icon: "typescript",
+  //     level: "Expert",
+  //     keywords: [
+  //       "Web Development",
+  //       "Frontend",
+  //       "Backend",
+  //       "JavaScript Superset",
+  //     ],
+  //   },
+  //   {
+  //     name: "Node",
+  //     icon: "nodejs",
+  //     level: "Expert",
+  //     keywords: ["Web Development", "Backend", "JavaScript", "Server"],
+  //   },
+  //   {
+  //     name: "PostgreSQL",
+  //     icon: "postgresql",
+  //     level: "Intermediate",
+  //     keywords: ["Databases", "SQL", "Data Storage", "Backend"],
+  //   },
+  //   {
+  //     name: "Git",
+  //     icon: "git",
+  //     level: "Intermediate",
+  //     keywords: ["Version Control", "Collaboration", "Source Code"],
+  //   },
+  //   {
+  //     name: "Next.js",
+  //     icon: "nextjs",
+  //     level: "Intermediate",
+  //     keywords: [
+  //       "Web Development",
+  //       "Frontend",
+  //       "React Framework",
+  //       "SSR",
+  //       "Static Generation",
+  //     ],
+  //   },
+  //   {
+  //     name: "React",
+  //     icon: "react",
+  //     level: "Expert",
+  //     keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
+  //   },
+  //   {
+  //     name: "Angular",
+  //     icon: "angular",
+  //     level: "Intermediate",
+  //     keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
+  //   },
+  //   {
+  //     name: "Vue",
+  //     icon: "vuejs",
+  //     level: "Intermediate",
+  //     keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
+  //   },
+  //   {
+  //     name: "Docker",
+  //     icon: "docker",
+  //     level: "Intermediate",
+  //     keywords: ["Virtual Environments", "Backend"],
+  //   },
+  //   {
+  //     name: "Kubernetes",
+  //     icon: "kubernetes",
+  //     level: "Intermediate",
+  //     keywords: [],
+  //   },
+  //   {
+  //     name: "Golang",
+  //     icon: "go",
+  //     level: "Intermediate",
+  //     keywords: ["Backend", "Cloud Service"],
+  //   },
+  //   {
+  //     name: "PHP",
+  //     icon: "php",
+  //     level: "Intermediate",
+  //     keywords: ["Web Development", "Backend", "Fullstack"],
+  //   },
+  //   {
+  //     name: "Python",
+  //     icon: "python",
+  //     level: "Intermediate",
+  //   },
+  // ],
 };
 
 export default data;

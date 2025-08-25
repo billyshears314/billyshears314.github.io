@@ -1,5 +1,6 @@
 import Carousel from "./Carousel";
 import type { Project } from "../types/types";
+import Skill from "./Skill";
 
 interface ProjectProps {
   project: Project;
@@ -33,6 +34,13 @@ export default function Project({ project }: ProjectProps) {
           {project.source}
         </a>
         {/* <Icon path={mdiLaunch} size={0.85} /> */}
+      </div>
+
+      <div className="flex flex-wrap gap-2 mt-4 mb-2 md:mb-6">
+        {/* <div className="text-xs">Technologies Used:</div> */}
+        {project.technologies.map((technology) => {
+          return <Skill skill={technology} />;
+        })}
       </div>
     </div>
   );

@@ -1,76 +1,23 @@
 import Icon from "@mdi/react";
-import {
-  mdiTailwind,
-  mdiGit,
-  mdiReact,
-  mdiAngular,
-  mdiVuejs,
-  mdiDocker,
-  mdiKubernetes,
-  mdiDatabase,
-} from "@mdi/js";
+import { skillMap } from "../constants";
+import type { SkillKey } from "../types/types";
 
-import {
-  SiHtml5,
-  SiJavascript,
-  SiTypescript,
-  SiGo,
-  SiPhp,
-  SiRuby,
-  SiPython,
-  SiNextdotjs,
-  SiPostgresql,
-  SiAmazondynamodb,
-  SiElasticsearch,
-  SiApachesolr,
-  SiGraphql,
-} from "react-icons/si";
-
-import { RiCss3Fill, RiNodejsLine } from "react-icons/ri";
-
-const iconMap = {
-  sql: mdiDatabase,
-  tailwind: mdiTailwind,
-  git: mdiGit,
-  react: mdiReact,
-  angular: mdiAngular,
-  vuejs: mdiVuejs,
-  docker: mdiDocker,
-  kubernetes: mdiKubernetes,
-  html: SiHtml5,
-  javascript: SiJavascript,
-  typescript: SiTypescript,
-  go: SiGo,
-  php: SiPhp,
-  python: SiPython,
-  ruby: SiRuby,
-  dynamodb: SiAmazondynamodb,
-  nextjs: SiNextdotjs,
-  postgresql: SiPostgresql,
-  elasticsearch: SiElasticsearch,
-  solr: SiApachesolr,
-  graphql: SiGraphql,
-  css: RiCss3Fill,
-  nodejs: RiNodejsLine,
-};
-
-type IconKey = keyof typeof iconMap;
-
-type Skill = {
-  name: string;
-  level?: "Beginner" | "Intermediate" | "Expert";
-  icon: IconKey;
-};
+// type Skill = {
+//   name: NameKey;
+//   level?: "Beginner" | "Intermediate" | "Expert";
+//   // icon: IconKey;
+// };
 
 type SkillProps = {
-  item: Skill;
+  skill: SkillKey;
 };
 
-export default function Skill({ item }: SkillProps) {
-  const icon = iconMap[item.icon];
+export default function Skill({ skill }: SkillProps) {
+  console.log("SKILL: " + skill);
+  const { name, icon } = skillMap[skill];
 
   if (!icon) {
-    return <div>{item.name}</div>; // fallback if icon not found
+    return <div>{name}</div>; // fallback if icon not found
   }
 
   function renderIcon(
@@ -87,7 +34,7 @@ export default function Skill({ item }: SkillProps) {
   return (
     <div className="flex my-[1px] bg-primary/50 rounded-lg items-center h-6 px-2">
       {renderIcon(icon)}
-      <div className="ml-1 -mt-[2px] text-sm semibold">{item.name}</div>
+      <div className="ml-1 -mt-[2px] text-sm semibold">{name}</div>
     </div>
   );
 }

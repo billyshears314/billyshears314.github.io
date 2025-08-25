@@ -1,3 +1,7 @@
+import { skillMap } from "../constants";
+
+export type SkillKey = keyof typeof skillMap;
+
 export interface Image {
   src: string;
   caption: string;
@@ -10,5 +14,5 @@ export interface Project {
   source: string;
   demo: string;
   images: Image[];
-  technologies: string[];
+  technologies: SkillKey[];
 }
