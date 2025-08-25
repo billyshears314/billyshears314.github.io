@@ -1,10 +1,5 @@
 import Experience from "./Experience";
 
-type Technology = {
-  name: string;
-  icon: any;
-};
-
 type Experience = {
   startDate: string;
   endDate: string;
@@ -14,7 +9,7 @@ type Experience = {
   location: string;
   summary: string;
   responsibilities: string[];
-  technologies: Technology[];
+  technologies: string[];
 };
 
 type ExperienceSectionProps = {

@@ -42,7 +42,7 @@ export default function Education({ item }: EducationProps) {
           <div className="text-sm text-gray-400">{item.degree}</div>
         </div>
       </div>
-      <div className="absolute right-0">
+      <div className="ml-auto text-right">
         <div className="text-sm font-semibold">
           {getYear(item.startDate)} - {getYear(item.endDate)}
         </div>

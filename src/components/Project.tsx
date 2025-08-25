@@ -19,18 +19,18 @@ export default function Project({ project }: ProjectProps) {
         )}
       </div>
       {project.demo && (
-        <div className="flex mb-2">
-          <span className="text-gray-300 font-bold">Live Demo: </span>
-          <a href={project.demo} className="ml-2 hover:text-primary">
+        <div className="flex flex-col md:flex-row mb-2">
+          <span className="text-gray-300 font-bold pr-2">Live Demo: </span>
+          <a href={project.demo} className="hover:text-primary">
             {project.demo}
           </a>
           {/* <Icon path={mdiLaunch} size={0.85} /> */}
         </div>
       )}
 
-      <div className="flex">
-        <span className="text-gray-300 font-bold">Source Code: </span>
-        <a href={project.source} className="ml-2 hover:text-primary">
+      <div className="flex flex-col md:flex-row">
+        <span className="text-gray-300 font-bold pr-2">Source Code: </span>
+        <a href={project.source} className=" hover:text-primary">
           {project.source}
         </a>
         {/* <Icon path={mdiLaunch} size={0.85} /> */}
