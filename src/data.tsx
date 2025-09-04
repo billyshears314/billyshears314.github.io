@@ -35,8 +35,8 @@ const data: any = {
       location: "Yardley, PA - Remote",
       summary: "",
       responsibilities: [
-        "Worked on integrating and syncing GR8 People’s customer data to LinkedIn using their API for Talent Solutions",
-        "Modernized campaign email and SMS messaging systems from ColdFusion to microservice system and redesigned frontend with our tech stack (Go, DynamoDB, GraphQL, React)",
+        "Implemented robust integrations connecting GR8 People to LinkedIn, providing direct visibility of customer data within the LinkedIn platform",
+        "Reengineered email and SMS campaign platforms, moving from ColdFusion to Go microservices and rebuilding the frontend to React, enhancing performance and maintainability",
       ],
       technologies: [
         "react",
@@ -60,10 +60,10 @@ const data: any = {
       summary:
         "Extending and maintaining SaaS application of Application Tracking System capabilities and career site pages for customer's.",
       responsibilities: [
-        "Led frontend project in developing a new version of the company’s primary eLearning software from the ground up",
-        "Built many internal tools and scripts to automate tasks to improve production time of generating hundreds of customized versions of eLearning software",
+        "Led the redevelopment of the company’s flagship eLearning software in Angular, delivering a modernized user experience in collaboration with designers and stakeholders",
+        "Automated production workflows using Node.js and Ruby, cutting lengthy turnaround time for generating hundreds of customized eLearning software versions",
         "Developed multiplayer question-based games",
-        "Research/Prototyping of AR software",
+        "Research/Prototyping of augmented reality software with ARKit 2",
       ],
       technologies: ["vuejs", "angular", "nodejs", "ruby", "python"],
     },
@@ -91,7 +91,7 @@ const data: any = {
       location: "Belmont, MA",
       summary: "",
       responsibilities: [
-        "Worked with tech team to develop custom eLearning pieces with custom content",
+        "Collaborated with tech team to develop custom eLearning pieces with custom content",
         "Developed portals and eGames",
         "Created full stack tool to search internal documents using Solr",
         "Developed solution using open source technologies for virtual microscopy project",
