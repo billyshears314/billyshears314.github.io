@@ -3,7 +3,7 @@ const data: any = {
     profileImg: "img/profile.jpg",
     name: "Alex Filipek",
     title: "Full Stack Developer",
-    location: "Boston, MA, USA",
+    location: "Austin, TX, USA",
     email: "awfilipek@gmail.com",
     links: [
       {
