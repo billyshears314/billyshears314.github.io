@@ -10,7 +10,10 @@ export default function Project({ project }: ProjectProps) {
   return (
     <div className="h-54 relative text-left py-8">
       <div className="text-xl mb-2">{project.title}</div>
-      <div className=" text-gray-300 mb-4">{project.description}</div>
+      <div
+        className=" text-gray-300 mb-4 [&_a]:text-blue-400 [&_a]:underline [&_a]:hover:text-blue-300"
+        dangerouslySetInnerHTML={{ __html: project.description }}
+      ></div>
       <div className="mb-4">
         {project.images.length === 1 ? (
           <img src={project.images[0].src} width={800} />

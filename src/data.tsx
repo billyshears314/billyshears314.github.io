@@ -23,7 +23,7 @@ const data: any = {
       },
     ],
     description:
-      "I am a frontend-leaning full stack developer.  I like to build highly interactive responsive web applications.  My preferred tech stack is Node.js and React with TypeScript.",
+      "I am a frontend-leaning full stack developer.  I enjoy turning complex problems into simple, user-friendly solutions.  My preferred tech stack is Node.js and React with TypeScript.",
   },
   experience: [
     {
@@ -103,7 +103,7 @@ const data: any = {
     {
       title: "Personal Finance",
       description:
-        "A fullstack responsive application for managing one's personal finances",
+        "A fullstack responsive application for managing one's personal finances.",
       source: "https://github.com/billyshears314/Personal-Finance",
       demo: "https://personal-finance-dusky.vercel.app",
       // TODO: REPLACE WITH REAL IMAGES
@@ -170,7 +170,7 @@ const data: any = {
     },
     {
       title: "Blackjack CLI",
-      description: "A blackjack game using the Deck of Cards API.",
+      description: `A blackjack game using the <a href="https://deckofcardsapi.com">Deck of Cards API</a>.`,
       source: "https://github.com/billyshears314/BlackjackCLI",
       images: [
         {

@@ -50,7 +50,7 @@ export default function About({ about }: AboutProps) {
           {about.name}
         </h1>
         <div className="text-sm text-gray-400 mb-2">{about.title}</div>
-        <div className="text-sm text-gray-400 mb-2 flex flex-row">
+        <div className="text-sm text-gray-400 mb-2 flex flex-row items-center ">
           <Icon path={mdiEarth} size={0.75} />{" "}
           <span className="ml-2 text-gray-400">{about.location}</span>
         </div>
